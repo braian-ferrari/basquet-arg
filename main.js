@@ -48,7 +48,11 @@ function calcularTotales(partidosJugados) {
             totalRebotesTomados += rebotesTomadosPartido;
             totalAsistenciasDadas += asistenciasDadasPartido;
             totalMinutosJugados += minutosJugadosPartido;
-
+            console.log("Tiros convertidos en el partido:" + tirosConvertidosPartido);
+            console.log("Rebotes tomados en el partido: " + rebotesTomadosPartido);
+            console.log("asistencias dadas en el partido: " +  asistenciasDadasPartido);
+            console.log("minutos jugados: " + totalMinutosJugados);
+            
             let verPorcentajes = prompt("queres ver tus porcentajes?");
             if (verPorcentajes.toLowerCase() == "si" || verPorcentajes.toUpperCase() == "SI") {
                 CalcularPorcentajes(totalTiros, totalTirosConvertidos, totalRebotesTomados, totalAsistenciasDadas, totalMinutosJugados);
